@@ -29,7 +29,7 @@ const projectsData = [
     id: 'Zenocide-application',
     title: 'Zenocide Application',
     description: 'With user-centered approach, the goals was to create an intuitive interface for enhanced financial intelligence.',
-    image: '/zenocide-project.png',
+    image: '/Zenocide-project.png',
     imageAlt: 'Laptop with Zenocide application',
     tags: ['APP', 'WEB'],
     hasBorders: false
@@ -77,7 +77,7 @@ const ProjectCard = ({ project, index }) => {
         {/* Common background image with strong glassmorphism effect */}
         <div className="absolute inset-0 z-0">
           <Image 
-            src="/Zenocide-project.png" 
+            src={project.image} 
             alt="" 
             fill
             className="object-cover"
